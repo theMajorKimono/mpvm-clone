@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #282828;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e3b75777;
+    border-radius: 20px;
+}
+
+:root {
+    --primary: #e3b757;
+
+    --header-height: 10em;
+}
+
+::-moz-selection {
+    background: #e3b75724;
+}
+
+::selection {
+    background: #e3b75724;
+}
+
+.header {
+    background-color: #202020;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #c59b41;
+    user-select: none;
+    padding: 1.2em 3em;
+}
+
+.header .left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.school-logo {
+    height: 100%;
+    width: auto;
+    margin-right: 2em;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-title {
+    color: #e3b757;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 100%;
+    font-weight: 600;
+}
+
+.affilation-codes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.affilation-codes>span {
+    color: #e9dabb73;
+    text-align: right;
+}
+
+.header .right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: 100%;
+}
+
+#nav-btn {
+    border: none;
+    font-size: 3em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    height: 100%;
+    transition: 0.2s ease-out;
+    overflow: hidden;
+}
+
+#nav-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-btn:hover {
+    background-color: #ffffff0c;
+}
+
+#nav-btn:hover svg path {
+    fill: #e3b757cc;
+}
+
+/*=============Navbar================*/
+
+#nav-menu {
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    height: calc(100vh - var(--header-height));
+    background-color: #202020;
+    position: fixed;
+    top: var(--header-height);
+    right: -30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+#nav-menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu ul li {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0.2em 0;
+}
+
+#nav-menu ul li a {
+    text-decoration: none;
+    color: #e3b757;
+    font-size: 2.5em;
+}
+
+#nav-menu ul li a:hover {
+    transform: scaleX(1);
+}
+
+/* main */
+
+.school-mission {
+    text-align: center;
+    color: #e3b757;
+    font: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.cards {
+    margin-top: 40px;
+    width: 350px;
+    border-right: 2px solid #e3b757;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal-card {
+    width: 300px;
+    background-color: #ffffff0e;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.principal-img {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.founder-card {
+    width: 300px;
+    background-color: #ffffff0e;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.founder-img {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
